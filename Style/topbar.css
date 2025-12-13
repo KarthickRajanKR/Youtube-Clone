@@ -1,0 +1,153 @@
+.top_bar{
+    left: 70px;
+    right: 10px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+    position: fixed;
+    height: 50px;
+    background-color: white;
+}
+
+.youtube_field{
+    flex: 20;
+    display: flex;
+}
+.search_field{
+    flex: 60;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+.user_field{
+    flex: 20; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: right;
+}
+
+
+.search_input{
+    margin-left: 10px;
+    width: 100%;
+    min-width: 0px;
+    max-width: 400px;
+    height: 25px;
+    padding-left: 15px;
+    border: .5px solid rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.search_input:focus{
+    outline: none;
+    border: .5px solid rgb(0, 81, 255);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4); 
+}
+
+
+.search_button{
+    text-align: center;
+    border: .5px solid rgba(0, 0, 0, 0.3);
+    max-width: 28px;
+    min-width: 40px;
+    height: 28px;
+    width: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.search_button:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+.search_button:active{
+     background-color: rgba(0, 0, 0, .2);
+}
+
+.voice_button{
+    max-width: 30px;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.voice_button:hover{
+     background-color: rgba(0, 0, 0, .1);
+}
+.voice_button:active{
+     background-color: rgba(0, 0, 0, .2);
+}
+
+.create_button{
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    background-color: white;
+    max-width: 30px;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none ;
+    cursor: pointer;
+}
+.create_button:hover{
+     background-color: rgba(0, 0, 0, .1);
+}
+.create_button:active{
+     background-color: rgba(0, 0, 0, .2);
+}
+
+
+.notification_button{
+    justify-content: center;
+    background-color: white;
+    max-width: 30px;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 20px ;
+    cursor: pointer;
+}
+.notification_button:hover{
+     background-color: rgba(0, 0, 0, .1);
+}
+.notification_button:active{
+     background-color: rgba(0, 0, 0, .2);
+}
+
+
+.profile_button{
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.tooltip{
+    visibility: hidden;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+    font-family: "roboto";
+    font-size: 10px;
+}
+.search_button:hover .tooltip{
+    visibility: visible;
+}
